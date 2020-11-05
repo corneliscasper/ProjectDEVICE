@@ -1,0 +1,14 @@
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/bin/Debug/netstandard2.0/proj.deps.json
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/bin/Debug/netstandard2.0/proj.dll
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/bin/Debug/netstandard2.0/ref/proj.dll
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/bin/Debug/netstandard2.0/proj.pdb
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/proj.csprojAssemblyReference.cache
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/proj.AssemblyInfoInputs.cache
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/proj.AssemblyInfo.cs
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/proj.csproj.CoreCompileInputs.cache
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/proj.dll
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/ref/proj.dll
+/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/obj/Debug/netstandard2.0/proj.pdb
