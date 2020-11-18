@@ -20,4 +20,9 @@
     <Folder Include="Repos\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\DetailPage.xaml.cs">
+      <DependentUpon>DetailPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

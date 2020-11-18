@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using proj.Models;
 
 namespace proj.Repos
@@ -23,7 +24,15 @@ namespace proj.Repos
                     string json = await client.GetStringAsync(url);
                     if (json != null)
                     {
-                        return JsonConvert.DeserializeObject<List<FootbalClub>>(json);
+                        //object deserializeren naar JObject (< newtonsoft)
+                        JObject fullObject = JsonConvert.DeserializeObject<JObject>(json);
+
+                        //enkel gewenst pad opvragen
+                        JToken data = fullObject.SelectToken("teams");
+
+                        //deze token deserializeren naar gewenst object type
+                        return data.ToObject <List<FootbalClub>> ();
+                        
                     }
                     else
                     {

@@ -1,20 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="proj.MainPage">
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10" />
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0" />
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at " />
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold" />
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout BackgroundColor="LightGreen">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" BackgroundColor="White" VerticalOptions="End" HorizontalOptions="Center" Padding="167,0" FontAttributes="Bold" Text="Welcome" FontSize="Medium"  TextColor="Black" />
+<Frame Grid.Row="2" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
+<StackLayout Spacing="0">
+<Grid RowSpacing="0">
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+<Label Text="Choose ur team" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+</Grid>
+<Grid RowSpacing="0">
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+
+<Entry x:Name="entEmail" Text="casper.cornelis@sgsintpaulus.eu" HorizontalOptions="Center" TextColor="Black" />
+</Grid>
+</StackLayout>
+</Frame>
+
+
+        </Grid>
+
+
     </StackLayout>
 </ContentPage>

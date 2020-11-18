@@ -1,18 +1,26 @@
 ﻿<Properties StartupConfiguration="{F68CA8CE-1635-4990-910E-04CC10FC052D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="proj/Models/FootbalClub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="proj/Views/Overview_Page.xaml.cs">
     <Files>
-      <File FileName="proj/MainPage.xaml.cs" Line="8" Column="1" />
-      <File FileName="proj/Repos/FootballRepo.cs" Line="1" Column="1" />
-      <File FileName="proj/Models/FootbalClub.cs" Line="1" Column="1" />
+      <File FileName="proj/MainPage.xaml.cs" Line="24" Column="1" />
+      <File FileName="proj/Repos/FootballRepo.cs" Line="18" Column="1" />
+      <File FileName="proj/Models/FootbalClub.cs" Line="13" Column="1" />
+      <File FileName="proj/Views/Overview_Page.xaml.cs" Line="37" Column="10" />
+      <File FileName="proj/Views/Overview_Page.xaml" Line="33" Column="49" />
+      <File FileName="proj/App.xaml.cs" Line="14" Column="41" />
+      <File FileName="proj/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="proj/Views/DetailPage.xaml" Line="1" Column="1" />
+      <File FileName="proj/Views/DetailPage.xaml.cs" Line="12" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="proj" expanded="True">
             <Node name="proj" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Repos" expanded="True">
-                <Node name="FootballRepo.cs" selected="True" />
+              <Node name="Views" expanded="True">
+                <Node name="DetailPage.xaml" expanded="True" />
+                <Node name="Overview_Page.xaml" expanded="True">
+                  <Node name="Overview_Page.xaml.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -20,13 +28,18 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.proj FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.proj.iOS FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE</String>
+  </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/MainPage.xaml.cs" relfile="proj/MainPage.xaml.cs" line="26" column="1" />
+      <Breakpoint file="/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/MainPage.xaml.cs" relfile="proj/MainPage.xaml.cs" line="25" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.proj.Android FirstBuild="True" PreferredExecutionTarget="Android.nexus_6_pie_9_0_-_api_28" />
+  <MonoDevelop.Ide.ItemProperties.proj.Android TriggeredFromHotReload="False" PreferredExecutionTarget="Android.nexus_6_pie_9_0_-_api_28" />
 </Properties>

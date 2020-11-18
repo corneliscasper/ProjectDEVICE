@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1a6d8WrBC5X6r33m27+uVzStuKLamP6caZNrX1JB0hEElg2CvI1rrVGNpzbkiLSZm7rt0xGXVAOkGja1s3kFRQ==",
+  "dgSpecHash": "+TiuV1/X1iQZs+W1digp3O/AG/C9oMlt7sbj7Q/dx6HDVG2YacxKNAIMrM86iRr9Ubr3ePqpkMBV/tMuOgSPYQ==",
   "success": true,
-  "projectFilePath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/proj.csproj",
+  "projectFilePath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/proj.csproj",
   "expectedPackageFiles": [
     "/Users/casper/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/casper/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",

@@ -22,6 +22,7 @@ namespace proj
         private async Task GetInfo()
         {
             List<FootbalClub> list = await FootballRepo.GetRegistrationsAsync("Arsenal");
+            Console.WriteLine(list[0].intFormedYear);
         }
     }
 }

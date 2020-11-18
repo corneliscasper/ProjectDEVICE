@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lvmCtJ+wC0jMjOxO/9CSzm2v2/pQwEBHUqZQnSg5wlJXz/Td4ZA4AlQekutox7taCzYc0yrktziLn1+R+0y6yQ==",
+  "dgSpecHash": "vy7550QUy+6wbtPFCqGQxF8bydXvHvsELAFb2up6xxeQU1/06L2rAaX472NCT8z3WdngEpqlZ8vAsPMtH3UBoQ==",
   "success": true,
-  "projectFilePath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj.Android/proj.Android.csproj",
+  "projectFilePath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj.Android/proj.Android.csproj",
   "expectedPackageFiles": [
     "/Users/casper/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/Users/casper/.nuget/packages/xamarin.android.arch.core.common/1.1.1.3/xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

@@ -1976,11 +1976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj.Android/proj.Android.csproj",
+      "projectUniqueName": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj.Android/proj.Android.csproj",
       "projectName": "proj.Android",
-      "projectPath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj.Android/proj.Android.csproj",
+      "projectPath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj.Android/proj.Android.csproj",
       "packagesPath": "/Users/casper/.nuget/packages/",
-      "outputPath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj.Android/obj/",
+      "outputPath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1995,8 +1995,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/proj.csproj": {
-              "projectPath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/proj/proj/proj.csproj"
+            "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/proj.csproj": {
+              "projectPath": "/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/proj.csproj"
             }
           }
         }

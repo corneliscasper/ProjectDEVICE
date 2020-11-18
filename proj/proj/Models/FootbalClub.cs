@@ -8,6 +8,7 @@ namespace proj.Models
         public string intFormedYear { get; set; }
         public string strLeague { get; set; }
         public string strStadium { get; set; }
+        public string strStadiumThumb { get; set; }
 
         public FootbalClub()
         {
