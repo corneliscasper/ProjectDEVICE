@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using proj.Models;
 using proj.Repos;
+using proj.Views;
 using Xamarin.Forms;
  
 
@@ -13,16 +14,34 @@ namespace proj
 {
     public partial class MainPage : ContentPage
     {
+        public string Team { get; set; }
         public MainPage()
         {
+
             InitializeComponent();
             GetInfo();
         }
 
         private async Task GetInfo()
         {
-            List<FootbalClub> list = await FootballRepo.GetRegistrationsAsync("Arsenal");
-            Console.WriteLine(list[0].intFormedYear);
+            //List<FootbalClub> list = await FootballRepo.GetRegistrationsAsync("Arsenal");
+            //Console.WriteLine(list[0].intFormedYear);
+            
+            
         }
+
+        async void Btn_TEAM(System.Object sender, System.EventArgs e)
+        {
+            Team = entTeam.Text;
+            if (entTeam.Text == "")
+            {
+                await DisplayAlert("ERROR", "You need to give a teamname","OK");
+            }
+            else
+            {   
+                Navigation.PushAsync(new Overview_Page(Team));
+            }
+        }
+
     }
 }

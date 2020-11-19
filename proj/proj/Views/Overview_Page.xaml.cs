@@ -10,15 +10,21 @@ namespace proj.Views
 {
     public partial class Overview_Page : ContentPage
     {
-        public Overview_Page()
+        public List<FootbalClub> list_football { get; set; }
+        public string Team { get; set; }
+        public Overview_Page(string Team)
         {
             InitializeComponent();
+            this.Team = Team;
             GetInfo();
+            
+
         }
 
         private async Task GetInfo()
         {
-            List<FootbalClub> list = await FootballRepo.GetRegistrationsAsync("Arsenal");
+            List<FootbalClub> list = await FootballRepo.GetRegistrationsAsync(Team);
+            list_football = list;
             Console.WriteLine(list[0].intFormedYear);
             Console.WriteLine(list[0].strLeague);
             Console.WriteLine(list[0].strStadium);
@@ -35,6 +41,7 @@ namespace proj.Views
 
         void BtnStadium_Clicked(System.Object sender, System.EventArgs e)
         {
+            Navigation.PushAsync(new DetailPage(list_football));
         }
     }
 }

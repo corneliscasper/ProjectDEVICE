@@ -11,7 +11,8 @@ namespace proj
         {
             InitializeComponent();
 
-            MainPage = new Overview_Page();
+            MainPage = new NavigationPage(new MainPage());
+            
         }
 
         protected override void OnStart()
