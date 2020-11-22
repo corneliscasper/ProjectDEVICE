@@ -7,6 +7,7 @@
                 <RowDefinition Height="110"/>
                 <RowDefinition Height="110"/>
                 <RowDefinition Height="110"/>
+                <RowDefinition Height="110"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Frame BorderColor="White" >
@@ -31,6 +32,12 @@
                 <StackLayout BackgroundColor="LightGreen">
                     <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="Details stadium"  HorizontalOptions="Center" />
                     <Button x:Name="BtnStadium"  Text="Click here"  BackgroundColor="LightGreen" Clicked="BtnStadium_Clicked"/>
+                </StackLayout> 
+            </Frame>
+             <Frame  Grid.Row="4" BorderColor="White" >
+                <StackLayout BackgroundColor="LightGreen">
+                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="Next event"  HorizontalOptions="Center" />
+                    <Button x:Name="BtnEvent"  Text="Click here"  BackgroundColor="LightGreen" Clicked="BtnEvent_Clicked"/>
                 </StackLayout> 
             </Frame>
 

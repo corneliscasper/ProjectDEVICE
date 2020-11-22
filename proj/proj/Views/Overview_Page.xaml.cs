@@ -43,5 +43,12 @@ namespace proj.Views
         {
             Navigation.PushAsync(new DetailPage(list_football));
         }
+
+        void BtnEvent_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new Next_event(list_football[0].idTeam));
+        }
+
+
     }
 }

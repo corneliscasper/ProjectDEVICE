@@ -5,7 +5,7 @@ namespace proj.Models
 {
     public class FootbalClub
     {
-
+        public string idTeam { get; set; }
         public string strTeam { get; set; }
         public string intFormedYear { get; set; }
         public string strLeague { get; set; }
