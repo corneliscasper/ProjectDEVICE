@@ -1,5 +1,51 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="proj.Views.Next_event">
     <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGreen">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" BackgroundColor="LightGreen" VerticalOptions="End" HorizontalOptions="Center" Padding="1,0" FontAttributes="Bold" Text="Next upcoming event" FontSize="Medium"  TextColor="Black" />
+<Frame Grid.Row="2" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
+<StackLayout Spacing="0">
+<Grid RowSpacing="0">
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition />
+<ColumnDefinition />
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+<Label Text="HOME" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+<Label Text="MATCH" Grid.Column="1" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+<Label Text="AWAY" Grid.Column="2" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+</Grid>
+<Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="30"/>
+    </Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition/>
+<ColumnDefinition/>
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+     
+    <Label Text="Liverpool" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"  Grid.Column="0"/>
+    <Label Text="VS" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="1"/>
+    <Label Text="Manchester City" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" Grid.Column="2"/>
+    
+</Grid>
+</StackLayout>
+</Frame>
+
+
+
+        </Grid>
+
+
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>

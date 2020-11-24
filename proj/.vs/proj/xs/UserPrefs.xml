@@ -1,18 +1,17 @@
 ﻿<Properties StartupConfiguration="{F68CA8CE-1635-4990-910E-04CC10FC052D}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="proj/Views/Next_event.xaml">
+    <Files>
+      <File FileName="proj/Views/Next_event.xaml" Line="28" Column="34" />
+      <File FileName="proj/MainPage.xaml" Line="38" Column="19" />
+      <File FileName="proj/Views/Next_event.xaml.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="proj" expanded="True">
             <Node name="proj" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Repos" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="DetailPage.xaml" expanded="True" />
-                <Node name="Next_event.xaml" expanded="True" />
-                <Node name="Overview_Page.xaml" expanded="True">
-                  <Node name="Overview_Page.xaml.cs" selected="True" />
-                </Node>
+                <Node name="Next_event.xaml" expanded="True" selected="True" />
               </Node>
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
@@ -28,9 +27,7 @@
     <String>/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE</String>
   </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/Views/Next_event.xaml.cs" relfile="proj/Views/Next_event.xaml.cs" line="24" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.proj.Android TriggeredFromHotReload="False" PreferredExecutionTarget="Android.nexus_6_pie_9_0_-_api_28" />
