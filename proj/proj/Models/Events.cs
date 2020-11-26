@@ -8,9 +8,8 @@ namespace proj.Models
 
         }
         public string strHomeTeam { get; set; }
-        public object Strleague { get; set; }
         public string strAwayTeam { get; set; }
-        public string strThumb { get; set; }
+        
     }
 
 }

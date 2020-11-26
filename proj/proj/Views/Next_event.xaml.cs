@@ -30,7 +30,7 @@ namespace proj.Views
          
             Trellocard card = new Trellocard();
             card.Name= Feedback.Text;
-            await FootballRepo.AddCardAsync("5fbf760ec952e73423a16be3", card);
+            await FootballRepo.AddFeedback("5fbf760ec952e73423a16be3", card);
             Navigation.PushAsync(new MainPage());
         }
     }

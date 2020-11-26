@@ -22,7 +22,7 @@
                 <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Black"></BoxView>
                 <Grid Grid.Row="2" RowSpacing="0">
   
-                    <Frame Grid.Row="0" Padding="0" Margin="1" OutlineColor="Black" x:Name="frmRegister">
+                    <Frame Grid.Row="0" Padding="0" Margin="1" OutlineColor="Black">
                     <Label x:Name="StadiumInfo" Text=""></Label>
                     </Frame>
                     

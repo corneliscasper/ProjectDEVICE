@@ -13,10 +13,14 @@ namespace proj.Repos
     {
         public FootballRepo()
         { }
+        //sportsdb
         private const string _BASAPI = "https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=";
+
+        //trello
         private const string _APIKEY = "b5128c8a3d416d0183221889892b6d2b";
         private const string _USERTOKEN = "5655cf5dd64410ec8f392ade7055f9bc0c6bca47b4dd467363bf55be8c465547";
         private const string _BASEURI = "https://api.trello.com/1";
+
 
         private static HttpClient GetHttpClient()
         {
@@ -127,7 +131,7 @@ namespace proj.Repos
             //return new List<Registration>();
         }
 
-        public static async Task AddCardAsync(string listid, Trellocard card)
+        public static async Task AddFeedback(string listid, Trellocard card)
         {
             string url = $"{_BASEURI}/cards?idList={listid}&key={_APIKEY}&token={_USERTOKEN}";
 
@@ -135,10 +139,6 @@ namespace proj.Repos
             {
                 try
                 {
-                    //string json = await client.GetStringAsync(url);
-                    //TrelloCard item = JsonConvert.DeserializeObject<TrelloCard>(json);// De data ophalen 
-                    //return item;
-
                     string json = JsonConvert.SerializeObject(card);
                     StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
                     var response = await client.PostAsync(url, content);
