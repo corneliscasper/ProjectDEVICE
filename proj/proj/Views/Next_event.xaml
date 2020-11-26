@@ -8,6 +8,8 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Label Grid.Row="1" BackgroundColor="LightGreen" VerticalOptions="End" HorizontalOptions="Center" Padding="1,0" FontAttributes="Bold" Text="Next upcoming event" FontSize="Medium"  TextColor="Black" />
 <Frame Grid.Row="2" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
@@ -33,13 +35,36 @@
 <ColumnDefinition />
 </Grid.ColumnDefinitions>
      
-    <Label Text="Liverpool" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center"  Grid.Column="0"/>
-    <Label Text="VS" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="1"/>
-    <Label Text="Manchester City" VerticalOptions="Center" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Center" Grid.Column="2"/>
+    <Label x:Name="Hometeam"  Text="" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="0"/>
+    <Label  Text="VS" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="1"/>
+    <Label x:Name="Awayteam" Text="" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="2"/>
+    
     
 </Grid>
 </StackLayout>
 </Frame>
+
+<Frame Grid.Row="4" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
+<StackLayout Spacing="0">
+<Grid RowSpacing="0">
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+<Label Text="Give us a feedback" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+</Grid>
+<Grid RowSpacing="0">
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+
+<Entry x:Name="Feedback" Text="" HorizontalOptions="Fill" TextColor="Black" />
+
+</Grid>
+</StackLayout>
+</Frame>
+<Button Grid.Row="5" x:Name="BtnFeedback"  Text="Send feedback" Clicked="BtnFeedback_Clicked" BackgroundColor="White"/>
 
 
 

@@ -7,6 +7,8 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             <Label Grid.Row="1" BackgroundColor="White" VerticalOptions="End" HorizontalOptions="Center" Padding="167,0" FontAttributes="Bold" Text="Welcome" FontSize="Medium"  TextColor="Black" />
 <Frame Grid.Row="2" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">

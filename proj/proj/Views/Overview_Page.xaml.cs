@@ -23,7 +23,7 @@ namespace proj.Views
 
         private async Task GetInfo()
         {
-            List<FootbalClub> list = await FootballRepo.GetRegistrationsAsync(Team);
+            List<FootbalClub> list = await FootballRepo.GetTeam(Team);
             list_football = list;
             Console.WriteLine(list[0].intFormedYear);
             Console.WriteLine(list[0].strLeague);

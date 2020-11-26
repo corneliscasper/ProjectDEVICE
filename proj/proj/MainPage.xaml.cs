@@ -33,10 +33,19 @@ namespace proj
         async void Btn_TEAM(System.Object sender, System.EventArgs e)
         {
             Team = entTeam.Text;
+            List<Existingteam> list = await FootballRepo.GetExistingteam(Team);
+
             if (entTeam.Text == "")
             {
                 await DisplayAlert("ERROR", "You need to give a teamname","OK");
             }
+            else
+            
+                if (list[0].teams == null)
+                {
+                    await DisplayAlert("ERROR", "Teamname incorrect", "OK");
+                }
+            
             else
             {   
                 Navigation.PushAsync(new Overview_Page(Team));

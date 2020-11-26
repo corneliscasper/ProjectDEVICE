@@ -20,7 +20,18 @@ namespace proj.Views
         private async Task Getevent()
         {
             List<Events> list = await FootballRepo.GetEvents(teamid);
-            //Console.WriteLine(list[0].intFormedYear);
+            Hometeam.Text = list[0].strHomeTeam;
+            Awayteam.Text = list[0].strAwayTeam;
+            
+        }
+
+        async void BtnFeedback_Clicked(System.Object sender, System.EventArgs e)
+        {
+         
+            Trellocard card = new Trellocard();
+            card.Name= Feedback.Text;
+            await FootballRepo.AddCardAsync("5fbf760ec952e73423a16be3", card);
+            Navigation.PushAsync(new MainPage());
         }
     }
 }
