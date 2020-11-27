@@ -40,11 +40,10 @@ namespace proj
                 await DisplayAlert("ERROR", "You need to give a teamname","OK");
             }
             else
-            
-                if (list[0].teams == null)
-                {
-                    await DisplayAlert("ERROR", "Teamname incorrect", "OK");
-                }
+            if (list == null)
+            {
+                await DisplayAlert("ERROR", "Incorrect teamname", "OK");
+            }
             
             else
             {   

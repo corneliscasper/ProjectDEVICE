@@ -7,6 +7,7 @@ namespace proj.Models
         {
         }
 
+        public string strteam { get; set; }
         public string teams { get; set; }
     }
 }
