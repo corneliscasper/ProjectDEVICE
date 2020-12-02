@@ -46,7 +46,7 @@ namespace proj.Views
 
         void BtnEvent_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new Next_event(list_football[0].idTeam));
+            Navigation.PushAsync(new Next_event(list_football[0].idTeam,list_football[0].strTeam));
         }
 
 

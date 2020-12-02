@@ -10,16 +10,18 @@ namespace proj.Views
     public partial class Next_event : ContentPage
     {
         public string teamid { get; set; }
-        public Next_event(string teamid)
+        public Next_event(string teamid,string team)
         {
             InitializeComponent();
             this.teamid = teamid;
+            this.Title = team;
             Getevent();
         }
 
         private async Task Getevent()
         {
             List<Events> list = await FootballRepo.GetEvents(teamid);
+            
             Hometeam.Text = list[0].strHomeTeam;
             Awayteam.Text = list[0].strAwayTeam;
             

@@ -19,10 +19,24 @@
     <Folder Include="Views\" />
     <Folder Include="Repos\" />
     <Folder Include="Models\" />
+    <Folder Include="Img\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Img\football-player-attempting-to-kick-ball.png" />
+    <None Remove="Img\football-ball.png" />
+    <None Remove="Img\football-player-setting-ball.png" />
+    <None Remove="Img\football-player-setting-ball.png" />
+    <None Remove="Img\soccer-goal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Img\football-player-attempting-to-kick-ball.png" />
+    <EmbeddedResource Include="Img\football-ball.png" />
+    <EmbeddedResource Include="Img\football-player-setting-ball.png" />
+    <EmbeddedResource Include="Img\soccer-goal.png" />
   </ItemGroup>
 </Project>

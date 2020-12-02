@@ -1,24 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage NavigationPage.HasNavigationBar="False" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="proj.MainPage">
-    <StackLayout BackgroundColor="LightGreen">
+    <StackLayout BackgroundColor="Green">
+        
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition/>
+                <RowDefinition Height="90"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition Height="50"/>
                 <RowDefinition/>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
-            <Label Grid.Row="1" BackgroundColor="White" VerticalOptions="End" HorizontalOptions="Center" Padding="167,0" FontAttributes="Bold" Text="Welcome" FontSize="Medium"  TextColor="Black" />
+    
+                 
+
+              <Frame BackgroundColor="LightGreen" HasShadow="False">
+                  <Grid>
+                      <Grid.ColumnDefinitions>
+                          <ColumnDefinition/>
+                          <ColumnDefinition/>
+                          <ColumnDefinition/>
+                      </Grid.ColumnDefinitions>
+                      <Image x:Name="Player1" Grid.Column="0" />
+                      <Image x:Name="Player2" Grid.Column="2" />
+                      <Image x:Name="Goal1" Grid.Column="1"/>
+                  </Grid>
+                  
+              </Frame>
+ 
+            
+ <Label Grid.Row="1" BackgroundColor="Green" VerticalOptions="End" HorizontalOptions="Center" Padding="167,0" FontAttributes="Bold" Text="Welcome" FontSize="Medium"  TextColor="White" />
 <Frame Grid.Row="2" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
+
 <StackLayout Spacing="0">
 <Grid RowSpacing="0">
 <Grid.ColumnDefinitions>
 
 <ColumnDefinition />
 </Grid.ColumnDefinitions>
-<Label Text="Choose ur team" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+<Label Text="Choose ur team" FontAttributes="Bold" Padding="5" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
 </Grid>
 <Grid RowSpacing="0">
 <Grid.ColumnDefinitions>
@@ -31,8 +51,31 @@
 </Grid>
 </StackLayout>
 </Frame>
-<Button Grid.Row="3" x:Name="BtnTeam"  Text="Click here" Clicked="Btn_TEAM" BackgroundColor="White"/>
+ <StackLayout Grid.Row="3">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
 
+                    </Grid.ColumnDefinitions>
+                        <Button  x:Name="BtnTeam" Grid.Column="1"  Text="Click here" Clicked="Btn_TEAM" BackgroundColor="White"/>
+                </Grid>
+ </StackLayout>
+
+<Frame  BackgroundColor="LightGreen" Grid.Row="6">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+    <Image Grid.Column="1" Rotation="180" x:Name="Goal2"/>
+    <Image x:Name="Player3" Grid.Column="0" />
+    <Image x:Name="Player4" Grid.Column="2" />
+    </Grid>
+
+</Frame>
 
         </Grid>
 

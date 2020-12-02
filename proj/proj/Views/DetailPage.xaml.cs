@@ -8,10 +8,11 @@ namespace proj.Views
     public partial class DetailPage : ContentPage
     {
         public List<FootbalClub> List_football { get; set; }
-        public DetailPage(List<FootbalClub>football_list)
+        public DetailPage(List<FootbalClub> football_list)
         {
             this.List_football = football_list;
-
+            this.Title = List_football[0].strTeam;
+            
             InitializeComponent();
             GetInfo();
         }

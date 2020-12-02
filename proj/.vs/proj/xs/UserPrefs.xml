@@ -1,25 +1,14 @@
 ﻿<Properties StartupConfiguration="{F68CA8CE-1635-4990-910E-04CC10FC052D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="proj/Views/DetailPage.xaml">
-    <Files>
-      <File FileName="proj/MainPage.xaml.cs" Line="42" Column="17" />
-      <File FileName="proj/Repos/FootballRepo.cs" Line="84" Column="1" />
-      <File FileName="proj/Models/Existingteam.cs" Line="11" Column="28" />
-      <File FileName="proj/Views/DetailPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="proj/Views/DetailPage.xaml" Line="4" Column="21" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="proj" expanded="True">
             <Node name="proj" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Repos" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="DetailPage.xaml" expanded="True" selected="True" />
-                <Node name="Next_event.xaml" expanded="True" />
-                <Node name="Overview_Page.xaml" expanded="True" />
+              <Node name="Img" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
               </Node>
-              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>

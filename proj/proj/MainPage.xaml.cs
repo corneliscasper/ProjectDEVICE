@@ -20,6 +20,16 @@ namespace proj
 
             InitializeComponent();
             GetInfo();
+            Player1.Source = ImageSource.FromResource("proj.Img." + "football-player-setting-ball" + ".png");
+            Player2.Source = ImageSource.FromResource("proj.Img." + "football-player-attempting-to-kick-ball" + ".png");
+            Player3.Source = ImageSource.FromResource("proj.Img." + "football-player-setting-ball" + ".png");
+            Player4.Source = ImageSource.FromResource("proj.Img." + "football-player-attempting-to-kick-ball" + ".png");
+            Goal2.Source= ImageSource.FromResource("proj.Img." + "soccer-goal" + ".png");
+            Goal1.Source = ImageSource.FromResource("proj.Img." + "soccer-goal" + ".png");
+
+
+
+
         }
 
         private async Task GetInfo()
