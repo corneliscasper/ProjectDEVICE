@@ -9,7 +9,8 @@ namespace proj.Models
         }
         public string strHomeTeam { get; set; }
         public string strAwayTeam { get; set; }
-        
+        public string strthumb { get; set; }
+
     }
 
 }

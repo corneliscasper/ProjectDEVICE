@@ -24,6 +24,7 @@ namespace proj.Views
             
             Hometeam.Text = list[0].strHomeTeam;
             Awayteam.Text = list[0].strAwayTeam;
+            Shedule.Source = list[0].strthumb;
             
         }
 

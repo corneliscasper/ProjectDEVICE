@@ -1,48 +1,82 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage NavigationPage.HasNavigationBar="False"  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  x:Class="proj.Views.Overview_Page">
     <ContentPage.Content>
-        <Grid BackgroundColor="LightGreen">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition Height="110"/>
-                <RowDefinition/>
+        
+        <Grid RowSpacing="30" BackgroundColor="Green">
+               <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                
+             
             </Grid.RowDefinitions>
-            <Frame BorderColor="White" >
-                <StackLayout BackgroundColor="LightGreen" >
-                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="Team"  HorizontalOptions="Center" />
-                    <Label x:Name="NaamTeam" Grid.Row="0" FontSize="Large" FontAttributes="Italic" TextColor="Black" Text=""  HorizontalOptions="Center" />
+            
+         
+            <Frame  BackgroundColor="Green" HasShadow="False"   >
+                    <Label Grid.Row="0" TextDecorations="Underline" FontSize="Title" FontAttributes="Bold" TextColor="White" Text="" x:Name="NaamTeam" VerticalTextAlignment="Center"  HorizontalOptions="Center" />                    
+            </Frame>
+            <Frame Margin=" 20,0,20,0"  BackgroundColor="LimeGreen"  HasShadow="False" CornerRadius="10"  Grid.Row="1"  >
+                <StackLayout BackgroundColor="Green">
+                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="White" Text="League"  HorizontalOptions="Center" />
+                    <Label x:Name="NaamLeague" Grid.Row="0" FontSize="Large" FontAttributes="Italic" TextColor="White" Text=""  HorizontalOptions="Center" />
                 </StackLayout> 
             </Frame>
-            <Frame  Grid.Row="1" BorderColor="White" >
-                <StackLayout  BackgroundColor="LightGreen">
-                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="League"  HorizontalOptions="Center" />
-                    <Label x:Name="NaamLeague" Grid.Row="0" FontSize="Large" FontAttributes="Italic" TextColor="Black" Text=""  HorizontalOptions="Center" />
+            <Frame Margin=" 20,0,20,0" BackgroundColor="LimeGreen" HasShadow="False" CornerRadius="10" Grid.Row="2"  >
+                <StackLayout BackgroundColor="Green">
+                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="White" Text="Stadium"  HorizontalOptions="Center" />
+                    <Label x:Name="NaamStadium" Grid.Row="0" FontSize="Large" FontAttributes="Italic" TextColor="White" Text=""  HorizontalOptions="Center" />
                 </StackLayout> 
             </Frame>
-            <Frame  Grid.Row="2" BorderColor="White" >
-                <StackLayout BackgroundColor="LightGreen">
-                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="Stadium"  HorizontalOptions="Center" />
-                    <Label x:Name="NaamStadium" Grid.Row="0" FontSize="Large" FontAttributes="Italic" TextColor="Black" Text=""  HorizontalOptions="Center" />
+            
+             <Frame Margin=" 20,0,20,0" BackgroundColor="LimeGreen" HasShadow="False" CornerRadius="10"  Grid.Row="3"  >
+                <StackLayout BackgroundColor="Green">
+                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="White" Text="Next event"  HorizontalOptions="Center" />
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+     
+                    <Label x:Name="Hometeam"  Text="" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White" HorizontalOptions="Center" Grid.Column="0"/>
+                    <Label  Text="VS" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White" HorizontalOptions="Center" Grid.Column="1"/>
+                    <Label x:Name="Awayteam" Text="" VerticalOptions="Center" FontAttributes="Bold"  TextColor="White" HorizontalOptions="Center" Grid.Column="2"/>
+    
+    
+                </Grid>
                 </StackLayout> 
             </Frame>
-            <Frame  Grid.Row="3" BorderColor="White" >
-                <StackLayout BackgroundColor="LightGreen">
-                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="Details stadium"  HorizontalOptions="Center" />
-                    <Button x:Name="BtnStadium"  Text="Click here"  BackgroundColor="LightGreen" Clicked="BtnStadium_Clicked"/>
+                
+                <StackLayout  Grid.Row="4" BackgroundColor="Green">
+                 
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                
+                </Grid.ColumnDefinitions>
+     
+                
+                    <Button x:Name="BtnEvent" Margin="10" VerticalOptions="Center" Grid.Column="0"  Text="Event" TextColor="Black" BackgroundColor="LightGreen" Clicked="BtnEvent_Clicked"/>
+                    <Button x:Name="BtnStadium"  Margin="10 " VerticalOptions="Center" Grid.Column="1"  Text="Stadium" TextColor="Black"  BackgroundColor="LightGreen" Clicked="BtnStadium_Clicked"/>
+        
+                </Grid>
                 </StackLayout> 
-            </Frame>
-             <Frame  Grid.Row="4" BorderColor="White" >
-                <StackLayout BackgroundColor="LightGreen">
-                    <Label Grid.Row="0" FontSize="Large" FontAttributes="Bold" TextColor="Black" Text="Next event"  HorizontalOptions="Center" />
-                    <Button x:Name="BtnEvent"  Text="Click here"  BackgroundColor="LightGreen" Clicked="BtnEvent_Clicked"/>
-                </StackLayout> 
-            </Frame>
+ 
+
+
 
             
             
         </Grid>
+           
     </ContentPage.Content>
 </ContentPage>

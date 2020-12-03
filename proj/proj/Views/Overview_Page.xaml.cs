@@ -19,6 +19,7 @@ namespace proj.Views
             GetInfo();
             
 
+
         }
 
         private async Task GetInfo()
@@ -33,9 +34,18 @@ namespace proj.Views
             NaamTeam.Text = list[0].strTeam;
             NaamLeague.Text = list[0].strLeague;
             NaamStadium.Text = list[0].strStadium;
-            
+            Getevent( list_football[0].idTeam);
 
 
+
+        }
+        private async Task Getevent(string teamid)
+        {
+            List<Events> list = await FootballRepo.GetEvents(teamid);
+
+
+            Hometeam.Text = list[0].strHomeTeam;
+            Awayteam.Text = list[0].strAwayTeam;
 
         }
 

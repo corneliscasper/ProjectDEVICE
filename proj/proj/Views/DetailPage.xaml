@@ -24,7 +24,7 @@
                 <Grid Grid.Row="2" RowSpacing="0">
   
                     <Frame Grid.Row="0" Padding="0" Margin="1" OutlineColor="Black">
-                    <Label x:Name="StadiumInfo" Text=""></Label>
+                    <Label Padding="30" VerticalTextAlignment="Center" x:Name="StadiumInfo" Text=""></Label>
                     </Frame>
                     
                 </Grid>

@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="proj.Views.Next_event">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="LightGreen">
+        <StackLayout Spacing="0" BackgroundColor="LightGreen">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition Height="50"/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition />
+                <RowDefinition Height="120"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
+            <Image Margin="0" x:Name="Shedule"></Image>
             <Label Grid.Row="1" BackgroundColor="LightGreen" VerticalOptions="End" HorizontalOptions="Center" Padding="1,0" FontAttributes="Bold" Text="Next upcoming event" FontSize="Medium"  TextColor="Black" />
 <Frame Grid.Row="2" BackgroundColor="White" OutlineColor="LightSteelBlue" Margin="2,16" Padding="16,0">
 <StackLayout Spacing="0">
@@ -21,9 +22,7 @@
 <ColumnDefinition />
 <ColumnDefinition />
 </Grid.ColumnDefinitions>
-<Label Text="HOME" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
-<Label Text="MATCH" Grid.Column="1" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
-<Label Text="AWAY" Grid.Column="2" FontAttributes="Bold" Padding="10" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+
 </Grid>
 <Grid RowSpacing="0">
     <Grid.RowDefinitions>
@@ -64,7 +63,17 @@
 </Grid>
 </StackLayout>
 </Frame>
-<Button Grid.Row="5" x:Name="BtnFeedback"  Text="Send feedback" Clicked="BtnFeedback_Clicked" BackgroundColor="White"/>
+<StackLayout Grid.Row="5" >
+<Grid>
+<Grid.ColumnDefinitions>
+    <ColumnDefinition/>
+    <ColumnDefinition/>
+    <ColumnDefinition/>
+</Grid.ColumnDefinitions>
+    <Button  Grid.Column="1" x:Name="BtnFeedback"  Text="Send feedback" Clicked="BtnFeedback_Clicked" BackgroundColor="White"/>
+
+</Grid>
+</StackLayout>
 
 
 
