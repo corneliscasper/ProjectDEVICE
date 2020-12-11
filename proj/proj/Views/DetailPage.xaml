@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage x:Name="Headbar" NavigationPage.HasNavigationBar="True" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  x:Class="proj.Views.DetailPage">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView  >
                     <Grid RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="300">
@@ -23,8 +23,8 @@
                 <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Black"></BoxView>
                 <Grid Grid.Row="2" RowSpacing="0">
   
-                    <Frame Grid.Row="0" Padding="0" Margin="1" OutlineColor="Black">
-                    <Label Padding="30" VerticalTextAlignment="Center" x:Name="StadiumInfo" Text=""></Label>
+                    <Frame BackgroundColor="DarkGreen" Grid.Row="0" Padding="0" Margin="1" OutlineColor="DarkGreen">
+                    <Label TextColor="White" Padding="30" VerticalTextAlignment="Center" x:Name="StadiumInfo" Text=""></Label>
                     </Frame>
                     
                 </Grid>

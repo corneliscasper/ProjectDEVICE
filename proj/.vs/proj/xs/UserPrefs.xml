@@ -1,10 +1,5 @@
 ﻿<Properties StartupConfiguration="{F68CA8CE-1635-4990-910E-04CC10FC052D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="proj/MainPage.xaml">
-    <Files>
-      <File FileName="proj/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="proj/MainPage.xaml" Line="34" Column="50" />
-      <File FileName="proj/Views/Overview_Page.xaml" Line="20" Column="39" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -17,7 +12,9 @@
                 <Node name="Overview_Page.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" selected="True" />
+              <Node name="MainPage.xaml" expanded="True">
+                <Node name="MainPage.xaml.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

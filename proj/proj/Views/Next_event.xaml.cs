@@ -10,11 +10,13 @@ namespace proj.Views
     public partial class Next_event : ContentPage
     {
         public string teamid { get; set; }
+        public string team { get; set; }
         public Next_event(string teamid,string team)
         {
             InitializeComponent();
             this.teamid = teamid;
             this.Title = team;
+            this.team = team;
             Getevent();
         }
 
@@ -32,7 +34,8 @@ namespace proj.Views
         {
          
             Trellocard card = new Trellocard();
-            card.Name= Feedback.Text;
+            card.Name= "This person was searching team "+this.team+", and his feedback is: " + Feedback.Text;
+            
             await FootballRepo.AddFeedback("5fbf760ec952e73423a16be3", card);
             Navigation.PushAsync(new MainPage());
         }
