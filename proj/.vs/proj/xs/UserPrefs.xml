@@ -6,15 +6,9 @@
           <Node name="proj" expanded="True">
             <Node name="proj" expanded="True">
               <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="DetailPage.xaml" expanded="True" />
-                <Node name="Next_event.xaml" expanded="True" />
-                <Node name="Overview_Page.xaml" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True">
-                <Node name="MainPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="Repos" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="MainPage.xaml" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,7 +23,6 @@
   </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/Repos/FootballRepo.cs" relfile="proj/Repos/FootballRepo.cs" line="154" column="1" />
       <Breakpoint file="/Users/casper/Desktop/MCT/2MCT/Device programming/Project/ProjectDEVICE/proj/proj/Repos/FootballRepo.cs" relfile="proj/Repos/FootballRepo.cs" line="64" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

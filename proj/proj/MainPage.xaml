@@ -39,7 +39,7 @@
 
 <ColumnDefinition />
 </Grid.ColumnDefinitions>
-<Label Text="Choose ur team" FontAttributes="Bold" Padding="5" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+<Label Text="Choose your team" FontAttributes="Bold" Padding="3" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
 </Grid>
 <Grid RowSpacing="0">
 <Grid.ColumnDefinitions>

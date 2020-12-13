@@ -11,18 +11,19 @@ namespace proj.Views
     {
         public string teamid { get; set; }
         public string team { get; set; }
+        public List<Events> list { get; set; }
         public Next_event(string teamid,string team)
         {
             InitializeComponent();
             this.teamid = teamid;
             this.Title = team;
-            this.team = team;
+            
             Getevent();
         }
 
         private async Task Getevent()
         {
-            List<Events> list = await FootballRepo.GetEvents(teamid);
+            list= await FootballRepo.GetEvents(teamid);
             
             Hometeam.Text = list[0].strHomeTeam;
             Awayteam.Text = list[0].strAwayTeam;
@@ -30,14 +31,25 @@ namespace proj.Views
             
         }
 
-        async void BtnFeedback_Clicked(System.Object sender, System.EventArgs e)
+        async void BtnBETTING_Clicked(System.Object sender, System.EventArgs e)
         {
-         
+
             Trellocard card = new Trellocard();
-            card.Name= "This person was searching team "+this.team+", and his feedback is: " + Feedback.Text;
+            try
+            {
+                int Hometeam = Int32.Parse(BETTING_HOMETEAM.Text);
+                int Awayteam = Int32.Parse(BETTING_AWAYTEAM.Text);
+                card.Name = list[0].strHomeTeam + "-" + list[0].strAwayTeam + " = " + BETTING_HOMETEAM.Text + "-" + BETTING_AWAYTEAM.Text;
+                await FootballRepo.AddBetting("5fbf760ec952e73423a16be3", card);
+                Navigation.PushAsync(new MainPage());
+            }
+
+            catch (FormatException)
+            {
+                await DisplayAlert("ERROR", "ONLY NUMBERS(1,2,3...)", "OK");
+            }
             
-            await FootballRepo.AddFeedback("5fbf760ec952e73423a16be3", card);
-            Navigation.PushAsync(new MainPage());
+            
         }
     }
 }

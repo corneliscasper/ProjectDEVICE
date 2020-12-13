@@ -31,7 +31,7 @@ namespace proj.Views
             Console.WriteLine(list[0].strStadium);
             Console.WriteLine(list[0].strStadiumThumb);
             Console.WriteLine(list[0].strTeam);
-            NaamTeam.Text = list[0].strTeam;
+            NaamTeam.Text = list[0].strTeam.ToUpper();
             NaamLeague.Text = list[0].strLeague;
             NaamStadium.Text = list[0].strStadium;
             Getevent( list_football[0].idTeam);

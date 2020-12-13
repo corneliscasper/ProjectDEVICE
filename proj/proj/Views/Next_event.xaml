@@ -41,9 +41,9 @@
     
     
  
-    <Label x:Name="Hometeam"  Text="" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="0"/>
+    <Label x:Name="Hometeam"  Text="" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="0"/>
     <Label  Text="VS" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="1"/>
-    <Label x:Name="Awayteam" Text="" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="2"/>
+    <Label x:Name="Awayteam" Text="" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="2"/>
 
   
       
@@ -59,15 +59,19 @@
 
 <ColumnDefinition />
 </Grid.ColumnDefinitions>
-<Label Text="Give us a feedback" FontAttributes="Bold" Padding="10" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+<Label Text="Give a betting" FontAttributes="Bold" Padding="10" FontSize="Medium"  TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
 </Grid>
 <Grid RowSpacing="0">
 <Grid.ColumnDefinitions>
 
 <ColumnDefinition />
+<ColumnDefinition />
+<ColumnDefinition />
 </Grid.ColumnDefinitions>
 
-<Entry x:Name="Feedback" Text="" HorizontalOptions="Fill" TextColor="Black" />
+<Entry Grid.Column="0" x:Name="BETTING_HOMETEAM" Text="" HorizontalOptions="FillAndExpand" TextColor="Black" />
+<Label  Text="VS" VerticalOptions="Center" FontAttributes="Bold"  TextColor="Black" HorizontalOptions="Center" Grid.Column="1"/>
+<Entry Grid.Column="2" x:Name="BETTING_AWAYTEAM" Text="" HorizontalOptions="FillAndExpand" TextColor="Black" />
 
 </Grid>
 </StackLayout>
@@ -79,7 +83,7 @@
     <ColumnDefinition/>
     <ColumnDefinition/>
 </Grid.ColumnDefinitions>
-    <Button  Grid.Column="1" x:Name="BtnFeedback"  TextColor="Black" Text="Send feedback" Clicked="BtnFeedback_Clicked" BackgroundColor="LightGreen"/>
+    <Button  Grid.Column="1" x:Name="BtnBetting"  TextColor="Black" Text="Send" Clicked="BtnBETTING_Clicked" BackgroundColor="LightGreen"/>
 
 </Grid>
 </StackLayout>

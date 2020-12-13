@@ -131,7 +131,7 @@ namespace proj.Repos
             //return new List<Registration>();
         }
 
-        public static async Task AddFeedback(string listid, Trellocard card)
+        public static async Task AddBetting(string listid, Trellocard card)
         {
             string url = $"{_BASEURI}/cards?idList={listid}&key={_APIKEY}&token={_USERTOKEN}";
 
